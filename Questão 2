@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+	float opera (float x, float y, int a){
+		float z;
+		
+		
+		switch (a) {
+			case 0:
+			 z = x + y;
+			 break;
+			 
+			 	case 1:
+			 z = x - y;
+			 break;
+			 
+			 	case 2:
+				 z = x * y;
+				 break;
+			 
+			 		case 3:
+			 		z = x / y;
+					 break;
+					 
+		default :
+			printf ("valor invalido");
+			 		
+		}
+		
+		return z;	
+	}
+		
+
+int main(int argc, char *argv[]) {
+	float x, y, z;
+	int a;
+	
+	printf ("digite um numero x\n");
+	scanf ("%f", &x);
+	
+	printf ("digite um numero y\n");
+	scanf ("%f", &y);
+	
+	printf ("escolha uma operacao\n ");
+	scanf ("%d", &a);
+	
+	  z = opera(x,y,a);
+  	printf("Resultado = %f\n", z);
+  	getch();
+	
+	
+		
+	
+	return 0;
+}
