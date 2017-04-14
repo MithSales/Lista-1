@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int divisores (int x, int vet[]) {
+		int cont1 = 0, i = 1, resto = 0;
+		
+		
+		
+		for (i=1; i< x+1; i++) {
+			resto = x % i;
+			if (resto == 0) {
+				vet[cont1] = i;
+				cont1++;
+									 
+			}
+		}
+			
+	 return (cont1);
+		}
+
+
+int main() {
+	int cont1, x, vet[1000];
+	
+	
+	printf ("digite um numero qualquer\n");
+	scanf ("%d", &x);
+	
+	cont1 = divisores(x, vet);
+	printf("%d", cont1);
+	
+	
+	
+	return 0;
+}
