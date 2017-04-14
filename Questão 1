@@ -1,0 +1,27 @@
+# Lista-1
+#include <stdio.h>
+#include <stdlib.h>
+
+int soma (int x, int y) {
+	int a;
+	
+	a = x + y;
+	
+	return a;
+}
+
+int main(int argc, char *argv[]) {
+	int a, x, y;
+	
+	printf ("digite um numero x\n");
+	scanf ("%d", &x);
+	
+	printf ("digite um numero y \n");
+	scanf ("%d", &y);
+	
+  a = soma(x,y);
+  printf("Resultado = %d\n", a);
+  getch();
+  return 0;
+	
+}
