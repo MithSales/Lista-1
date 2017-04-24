@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float compoe(int a, int b, int c){
+	
+	float x;
+	int cont1=0, i=b;
+	
+	while (i>0){
+		
+		i = i/10;
+		cont1++; 		
+	}	
+	 
+	 x = b/pow(10, cont1+c);
+   
+	if (a<0){
+		
+		return a-x;	
+	}
+	
+	return a+x;
+}
+
+int main(int argc, char *argv[]) {
+	
+	int a, b, c;
+	
+	printf ("digite um numero a \n");
+	scanf ("%d", &a);	
+	
+		printf ("digite um numero b\n");
+	scanf ("%d", &b);	
+	
+		printf ("digite um numero c\n");
+	scanf ("%d", &c);	
+	
+	
+	printf ("seu numero eh %f", compoe(a, b, c));
+	
+	
+	return 0;
+}
